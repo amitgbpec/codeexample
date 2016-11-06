@@ -18,7 +18,6 @@ class OrderedArray{
           a[j+1]=a[j];
           a[j]=item;
           j--;
-
         }
       }
   noOfEle++;

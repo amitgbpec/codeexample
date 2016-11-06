@@ -9,6 +9,16 @@ class EmployeeApp{
     arr.insert("Niki","Negi",1005);
     arr.insert("Smita","joshi",1006);
     arr.displayEmployeeData();
-  }
 
+    //find employee with last name
+    //add ignore case later
+    System.out.println("Employee with last name - joshi is present "+arr.find("joshi"));
+    System.out.println("Employee with last name - doe is present "+arr.find("doe"));
+    System.out.println("Employee with last name - Goyal1 is present "+arr.find("Goyal1"));
+
+    //Delete employe and display employee
+    arr.delete("Sharma");
+    arr.delete("Negi");
+    arr.displayEmployeeData();
+  }
 }

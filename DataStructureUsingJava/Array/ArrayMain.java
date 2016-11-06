@@ -7,12 +7,10 @@ class ArrayMain{
    a = new long[max];
    noOfEle=0;
  }
-
  //Default constructor
  ArrayMain(){
 
  }
-
   public void insert(long item){
     a[noOfEle]=item;
     noOfEle++;
@@ -31,7 +29,7 @@ class ArrayMain{
       return true;
   }
 
-  public boolean delete(int itemToDelete){
+  public boolean delete(long itemToDelete){
     int i;
     for (i=0;i<noOfEle ;i++ ) {
       if(a[i]==itemToDelete){
@@ -55,6 +53,28 @@ class ArrayMain{
       System.out.print(a[i]+" ");
     }
     System.out.println();
+  }
+  //Returns the maximum number from array
+  public long getMax(){
+    long max=0;
+    if(noOfEle==0)
+      return -1;
+      else{
+        for (int i=0;i<noOfEle;i++ ) {
+          if(max<a[i]){
+            max=a[i];
+          }
+
+        }
+      }
+      return max;
+
+  }
+
+  //Remove maximumno from array
+  public void removeMax(){
+    long maxNumber = this.getMax();
+    this.delete(maxNumber);
   }
 
 

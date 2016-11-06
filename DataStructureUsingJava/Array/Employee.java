@@ -12,4 +12,8 @@ class Employee{
   public void display(){
     System.out.println("First Name:"+this.firstName+"|"+"Last Name:"+this.lastName+"|"+"Employee ID:"+this.employeeId);
     }
+
+  public String getLastName(){
+    return this.lastName;
+  }
 }

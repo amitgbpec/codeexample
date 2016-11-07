@@ -1,2 +1,2 @@
 # codeexample
-This is my code for practice
+Various code examples for practice.
